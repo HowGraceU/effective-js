@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		console.log('在加载 effective67.js 之前执行函数，在 effective67.js 运行之前输出');
+		window.setTimeout(function () {
+			console.log('在加载 effective67.js 之前执行函数，但是在 effective67.js 运行之后输出')
+		}, 0)
+	</script>
+	<script src="effective67.js"></script>
+</body>
+</html>
